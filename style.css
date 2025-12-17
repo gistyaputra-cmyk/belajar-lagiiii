@@ -1,0 +1,94 @@
+body {
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background:#e6dfd1;
+  color:#3e3b32;
+}
+
+.hidden { display:none; }
+
+/* LOGIN */
+.login-page {
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:url('https://upload.wikimedia.org/wikipedia/commons/3/3e/Mount_Rinjani.jpg') center/cover;
+}
+
+.login-box {
+  background:rgba(255,255,255,0.9);
+  padding:30px;
+  border-radius:12px;
+  text-align:center;
+  width:300px;
+}
+
+.login-box input {
+  width:90%;
+  padding:10px;
+  margin:8px 0;
+}
+
+button {
+  padding:10px 20px;
+  background:#6b705c;
+  color:white;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.logo { width:90px; }
+
+/* HEADER */
+header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:15px 30px;
+  background:#6b705c;
+  color:white;
+}
+
+.logo-small { width:50px; }
+
+.logout {
+  background:#a4161a;
+}
+
+/* TRAIL */
+.trail-container {
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  margin:40px;
+}
+
+.trail-card {
+  background:#fff;
+  width:300px;
+  border-radius:12px;
+  overflow:hidden;
+  text-align:center;
+}
+
+.trail-card img {
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+/* PREPARE & RATING */
+.prepare, .rating {
+  background:#fff;
+  margin:30px auto;
+  padding:20px;
+  width:70%;
+  border-radius:10px;
+}
+
+.rating span {
+  font-size:30px;
+  cursor:pointer;
+}
