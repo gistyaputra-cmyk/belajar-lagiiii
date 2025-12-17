@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Booking Tiket Gunung Rinjani</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN PAGE -->
+<div class="login-page" id="loginPage">
+  <div class="login-box">
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/id/6/6f/Logo_TN_Gunung_Rinjani.png">
+    <h2>Booking Tiket Rinjani</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+  </div>
+</div>
+
+<!-- BOOKING PAGE -->
+<div class="home-page hidden" id="homePage">
+
+<header>
+  <img class="logo-small" src="https://upload.wikimedia.org/wikipedia/id/6/6f/Logo_TN_Gunung_Rinjani.png">
+  <h1>Booking Tiket Gunung Rinjani</h1>
+  <button class="logout" onclick="logout()">Log Out</button>
+</header>
+
+<div class="trail-container">
+
+  <!-- SEMBALUN -->
+  <div class="trail-card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Mount_Rinjani_Sembalun.jpg">
+    <h3>Rinjani Via Sembalun</h3>
+    <button onclick="detailSembalun()">Pilih Jalur</button>
+  </div>
+
+  <!-- TOREAN -->
+  <div class="trail-card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Torean_Trail_Rinjani.jpg">
+    <h3>Rinjani Via Torean</h3>
+    <button onclick="detailTorean()">Pilih Jalur</button>
+  </div>
+
+</div>
+
+<!-- PERSIAPAN -->
+<div class="prepare">
+<h2>Persiapan Sebelum Pendakian</h2>
+<ul>
+<li>Fisik & mental siap</li>
+<li>Peralatan standar pendakian</li>
+<li>Logistik cukup</li>
+<li>Ikuti aturan TNGR</li>
+</ul>
+</div>
+
+<!-- RATING -->
+<div class="rating">
+<h2>Rating Website</h2>
+<span onclick="rate(1)">⭐</span>
+<span onclick="rate(2)">⭐</span>
+<span onclick="rate(3)">⭐</span>
+<span onclick="rate(4)">⭐</span>
+<span onclick="rate(5)">⭐</span>
+<br><br>
+<button onclick="submitRating()">Submit Rating</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
